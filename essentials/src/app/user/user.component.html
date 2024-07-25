@@ -45,8 +45,8 @@ By adding attr in front of the attribute name you want to bind dynamically, you'
  <!-- In the below code everytime execution of src property binding is done which is cumbersome and 
  takes time to load on page.
  Better we can use Getters for computed Values. -->
-<img [src]="imagePath" [alt]="selectedUser.name">
+<img [src]="imagePath()" [alt]="selectedUser().name">
         <!-- <img src="{{ selectedUser.avatar}}" /> -->
-        <span>{{selectedUser.name}}</span>
+        <span>{{selectedUser().name}}</span>
     </button>
 </div>
